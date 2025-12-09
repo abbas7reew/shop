@@ -15,9 +15,11 @@ import CartPage from "./pages/CartPage";
 import WishlistPage from "./pages/WishlistPage";
 import OrdersPage from "./pages/OrdersPage";
 
-// ⭐ إضافة OrdersProvider
+
 import { OrdersProvider } from "./context/OrdersContext";
 import Signup from "./pages/Signup";
+
+
 
 export default function App() {
   const location = useLocation();
