@@ -6,7 +6,6 @@ import Footer from "./components/Footer";
 import BackToTopButton from "./components/BackToTopButton";
 
 import Login from "./pages/Login";
-import Signup from "./pages/Signup";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ProductsPage from "./pages/ProductsPage";
@@ -18,6 +17,7 @@ import OrdersPage from "./pages/OrdersPage";
 
 // ⭐ إضافة OrdersProvider
 import { OrdersProvider } from "./context/OrdersContext";
+import Signup from "./pages/Signup";
 
 export default function App() {
   const location = useLocation();
