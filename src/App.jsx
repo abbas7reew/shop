@@ -5,19 +5,19 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import BackToTopButton from "./components/BackToTopButton";
 
-import Login from "./pages/Login";
-import HomePage from "./pages/HomePage";
-import AboutPage from "./pages/AboutPage";
-import ProductsPage from "./pages/ProductsPage";
-import ProductDetailsPage from "./pages/ProductDetailsPage";
-import CartPage from "./pages/CartPage";
-
-import WishlistPage from "./pages/WishlistPage";
-import OrdersPage from "./pages/OrdersPage";
+import Login from "./pages/Login.jsx";
+import HomePage from "./pages/HomePage.jsx";
+import AboutPage from "./pages/AboutPage.jsx";
+import ProductsPage from "./pages/ProductsPage.jsx";
+import ProductDetailsPage from "./pages/ProductDetailsPage.jsx";
+import CartPage from "./pages/CartPage.jsx";
+import WishlistPage from "./pages/WishlistPage.jsx";
+import OrdersPage from "./pages/OrdersPage.jsx";
 
 
 import { OrdersProvider } from "./context/OrdersContext";
-import Signup from "./pages/Signup";
+import Signup from "./pages/Signup.jsx";
+
 
 
 
