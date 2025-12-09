@@ -1,0 +1,38 @@
+{
+  "products": [
+    { "id": 1, "name": "Bag", "description": "Stylish and spacious bag.", "price": 99.99, "image": "/images/bag.jpg" },
+    { "id": 2, "name": "Blazer", "description": "High-quality blazer.", "price": 79.99, "image": "/images/blazer.jpg" },
+    { "id": 3, "name": "Dress", "description": "Elegant dress.", "price": 49.99, "image": "/images/dress.jpg" },
+    { "id": 4, "name": "Glasses", "description": "Trendy sunglasses.", "price": 89.99, "image": "/images/glasses.jpg" },
+    { "id": 5, "name": "Hat", "description": "Stylish hat.", "price": 59.99, "image": "/images/hat.jpg" },
+
+    { "id": 6, "name": "Jacket", "description": "Warm winter jacket.", "price": 120.0, "image": "/images/jacket.jpg" },
+    { "id": 7, "name": "Jeans", "description": "Comfortable blue jeans.", "price": 70.5, "image": "/images/jeans.jpg" },
+    { "id": 8, "name": "Shoes", "description": "Running shoes.", "price": 85.0, "image": "/images/shoes.jpg" },
+    { "id": 9, "name": "Skirt", "description": "Casual summer skirt.", "price": 45.0, "image": "/images/skirt.jpg" },
+    { "id": 10, "name": "Sweater", "description": "Cozy wool sweater.", "price": 60.0, "image": "/images/sweater.jpg" },
+
+    { "id": 11, "name": "T-shirt", "description": "Basic white t-shirt.", "price": 20.0, "image": "/images/tshirt.jpg" },
+    { "id": 12, "name": "Shorts", "description": "Comfortable cotton shorts.", "price": 35.0, "image": "/images/shorts.jpg" },
+    { "id": 13, "name": "Scarf", "description": "Warm and stylish scarf.", "price": 25.0, "image": "/images/scarf.jpg" },
+    { "id": 14, "name": "Cap", "description": "Stylish summer cap.", "price": 18.0, "image": "/images/cap.jpg" },
+    { "id": 15, "name": "Belt", "description": "Leather belt.", "price": 30.0, "image": "/images/belt.jpg" }
+
+  ],
+
+  "team": [
+    { "id": 1, "name": "Alice Johnson", "role": "CEO", "image": "/images/team1.jpg" },
+    { "id": 2, "name": "Michael Smith", "role": "Marketing Director", "image": "/images/team2.jpg" },
+    { "id": 3, "name": "Sophie Brown", "role": "Lead Designer", "image": "/images/team3.jpg" },
+    { "id": 4, "name": "David Wilson", "role": "Developer", "image": "/images/team4.jpg" }
+  ],
+
+  "testimonials": [
+    { "id": 1, "name": "Emma Davis", "position": "Customer", "message": "Amazing quality!", "image": "/images/customer1.jpg" },
+    { "id": 2, "name": "Liam Johnson", "position": "Customer", "message": "Excellent service!", "image": "/images/customer2.jpg" },
+    { "id": 3, "name": "Olivia Miller", "position": "Customer", "message": "Highly recommended!", "image": "/images/customer3.jpg" }
+  ],
+
+  "cart": []
+}
+

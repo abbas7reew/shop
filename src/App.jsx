@@ -1,0 +1,124 @@
+import { Routes, Route, useLocation } from "react-router-dom";
+import PrivateRoute from "./components/PrivateRoute";
+
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import BackToTopButton from "./components/BackToTopButton";
+
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
+import ProductsPage from "./pages/ProductsPage";
+import ProductDetailsPage from "./pages/ProductDetailsPage";
+import CartPage from "./pages/CartPage";
+
+import WishlistPage from "./pages/WishlistPage";
+import OrdersPage from "./pages/OrdersPage";
+
+// ⭐ إضافة OrdersProvider
+import { OrdersProvider } from "./context/OrdersContext";
+
+export default function App() {
+  const location = useLocation();
+  const hideNavbar = location.pathname === "/login" || location.pathname === "/signup";
+
+  return (
+    // ⭐ لفّ التطبيق كامل داخل OrdersProvider
+    <OrdersProvider>
+      <div className="min-h-screen bg-gray-100 dark:bg-gray-900 transition-colors duration-300">
+        {!hideNavbar && <Navbar />}
+
+        <Routes>
+          {/* صفحات غير محمية */}
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+
+          {/* صفحات محمية */}
+          <Route
+            path="/"
+            element={
+              <PrivateRoute>
+                <HomePage />
+              </PrivateRoute>
+            }
+          />
+
+          <Route
+            path="/about"
+            element={
+              <PrivateRoute>
+                <AboutPage />
+              </PrivateRoute>
+            }
+          />
+
+          <Route
+            path="/products"
+            element={
+              <PrivateRoute>
+                <ProductsPage />
+              </PrivateRoute>
+            }
+          />
+
+          <Route path="/product/:id" element={<ProductDetailsPage />} />
+
+
+          <Route
+            path="/products/:id"
+            element={
+              <PrivateRoute>
+                <ProductDetailsPage />
+              </PrivateRoute>
+            }
+          />
+
+          <Route
+            path="/cart"
+            element={
+              <PrivateRoute>
+                <CartPage />
+              </PrivateRoute>
+            }
+          />
+
+          {/* صفحات جديدة */}
+          <Route
+            path="/wishlist"
+            element={
+              <PrivateRoute>
+                <WishlistPage />
+              </PrivateRoute>
+            }
+          />
+
+          <Route
+            path="/orders"
+            element={
+              <PrivateRoute>
+                <OrdersPage />
+              </PrivateRoute>
+            }
+          />
+        </Routes>
+
+        {!hideNavbar && <Footer />}
+
+        <BackToTopButton />
+      </div>
+    </OrdersProvider>
+  );
+}
+
+
+
+
+
+
+
+
+
+
+
+
