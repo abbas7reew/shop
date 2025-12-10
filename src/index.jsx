@@ -8,6 +8,9 @@ import { CartProvider } from "./context/CartContext";
 import { AuthProvider } from "./context/AuthContext";
 import "react-toastify/dist/ReactToastify.css";
 
+
+
+
 createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
