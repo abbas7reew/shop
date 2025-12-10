@@ -5,6 +5,9 @@ import { useCart } from '../context/CartContext'
 import { useAuth } from '../context/AuthContext'
 import { useLanguage } from '../context/LanguageContext' // ⬅ إضافة
 
+
+
+
 export default function Navbar() {
   const { totalItems } = useCart()
   const { logout } = useAuth()
