@@ -1,4 +1,4 @@
-// src/App.jsx
+
 
 import { Routes, Route, useLocation } from "react-router-dom";
 import PrivateRoute from "./components/PrivateRoute.jsx";

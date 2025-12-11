@@ -2,7 +2,7 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
 import "./index.css";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import { ThemeProvider } from "./context/ThemeContext";
 import { CartProvider } from "./context/CartContext";
 import { AuthProvider } from "./context/AuthContext";
@@ -14,7 +14,7 @@ import { ToastContainer } from "react-toastify";
 
 createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>   {/* ← التعديل الوحيد */}
       <LanguageProvider>
         <ThemeProvider>
           <OrdersProvider>
@@ -28,7 +28,7 @@ createRoot(document.getElementById("root")).render(
                     hideProgressBar={false}
                     newestOnTop
                     closeOnClick
-                    rtl={false} // ضع true إذا أردت دعم العربية بالكامل
+                    rtl={false}
                     pauseOnFocusLoss
                     draggable
                     pauseOnHover
@@ -40,7 +40,7 @@ createRoot(document.getElementById("root")).render(
           </OrdersProvider>
         </ThemeProvider>
       </LanguageProvider>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
 

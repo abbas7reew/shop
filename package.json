@@ -2,6 +2,10 @@
   "name": "reew",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://abbas7reew.github.io/E-commerce",
+  
+
+
   "scripts": {
    "dev": "vite",
   "build": "vite build",
